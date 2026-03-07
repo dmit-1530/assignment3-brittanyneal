@@ -158,6 +158,105 @@ footer {
 
 /* ***************** Add media query for the 588px screen ***************** */
 
-/* ***************** footer ***************** */
+
+@media screen and (min-width: 588px) {
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2.75rem;
+    }
+
+    .newsletter-form {
+        display: flex;
+    }
+
+    form .btn {
+        height: 55px;
+        width: 50%;
+    }
+
+    .email-field {
+        max-width: 23.9375rem;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .tour-flex {
+        display: flex;
+        gap: 2rem;       
+    }
+
+    .column-one {
+        min-width: 458px;
+    }
+
+    .column-two {
+        min-width: 458px;
+    }
+
+    .btn-center {
+        justify-content: flex-start;
+    }   
+}
+
+@media screen and (min-width: 1920px) {
+
+    header .container {
+        max-width: 1720px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    main {
+        max-width: 1720px;
+        margin: 0 auto;
+    }
+
+    .main-last-screen {
+        display: flex;
+        width: calc((100% / 3) - (4rem / 3));
+    }
+
+    .column-one {
+        min-width: 552px;
+    }
+
+    .column-two {
+        min-width: 552px;
+    }
+
+    aside {
+        height: fit-content;
+        min-width: 552px;
+    }
+}
+
+
+/* ***************** footer  ***************** */
+
+@media screen and (min-width: 980px) {
+     .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
 
 /* ***************** footer ***************** */
+
+@media screen and (min-width: 1920px) {
+    footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        margin-right: 21.4375rem;
+        margin-left: 21.4375rem;
+    }
+}
